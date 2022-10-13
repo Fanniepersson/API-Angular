@@ -1,0 +1,93 @@
+/*
+.container{
+  padding: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.h1{
+  text-align: center;
+}
+
+
+  .content {
+    display: flex;
+    margin: 82px auto 32px;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
+/***********************************************/
+
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #9f8170;
+  color: white;
+  font-weight: 600;
+  min-height: 70px;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+li{
+  margin: 0 30px;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+
+.nav-menu{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 60px;
+}
+.navbar .nav-menu li a {
+text-decoration: none;
+color: #fff;
+text-transform: uppercase;
+}
+
+.nav-link{
+font-size: 15px;
+transition: color 0.5s;
+}
+.navbar .nav-menu li a:hover{
+color: #321414;
+}
+.navbar .nav-menu li a:after{
+position: absolute;
+content: '';
+height: 3px;
+width: 0;
+background: #321414;
+left: 0;
+bottom: -2px;
+transition: 0.5s;
+}
+.navbar .nav-menu li a:hover::after{
+width: 100%;
+
+}
+.navbar .nav-menu li {
+list-style: none;
+display: inline-block;
+margin: 0 20px;
+position: relative;
+}

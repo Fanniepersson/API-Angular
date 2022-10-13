@@ -1,0 +1,38 @@
+.container{
+    max-width: 1000px;
+    margin-top: 40em;
+    margin-left: -30em;
+    margin-right: 55em;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+h3{
+    font-size: 25px;
+    font-weight: 300;
+   
+}
+table{
+    padding-top: 2em;
+    margin-left: -5em;
+    width: 100px;
+   
+}
+thead{
+  
+    padding-top: 2em;
+    margin-left: -25em;
+    width: 100px;
+    border-collapse: collapse;
+    background-color: black;
+    color: white;
+}
+th, td{
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+}
+tbody{
+    border-collapse:separate;
+    border-spacing:0 15px;
+}
+

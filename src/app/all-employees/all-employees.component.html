@@ -1,0 +1,31 @@
+<div class="container">  
+    <h3>LIST OF OUR EMPLOYEES</h3>  
+   
+    <table>  
+        <thead>  
+            <tr>  
+                <th>Department</th>  
+                <th>Fullname</th>
+                <th>Gender</th>
+                <th>Mail</th>
+                <th>Phone Number</th>
+                <th>City</th>
+                <th>Salary</th>
+              </tr>  
+        </thead>  
+        <tbody>  
+          <tr *ngFor="let emp of employees">  
+            <td>{{emp.department?.departmentName}}</td>
+            <td>{{emp.firstName + " " + emp.lastName}}</td>
+            <td>{{emp.gender}}</td>
+            <td>{{emp.email}}</td>
+            <td>{{emp.phoneNumber}}</td>
+            <td>{{emp.city}}</td>
+            <td>{{emp.salary}}</td>
+
+     
+          </tr>  
+        </tbody>  
+      </table>  
+    </div>  
+

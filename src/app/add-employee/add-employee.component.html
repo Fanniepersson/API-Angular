@@ -1,0 +1,99 @@
+
+<div class="container">
+ 
+  <div class="employee-container">
+    <div class="employee-form">
+      
+      <h3>Add / Update or Delete Employee</h3>
+
+      <form #form="ngForm" (ngSubmit)="onSubmit()">
+
+        <div class="form-group">
+          <label for="">FirstName</label>
+          <input type="text" name="firstName" [(ngModel)]="employee.firstName">
+        </div>
+
+        <div class="form-group">
+          <label for="">LastName</label>
+          <input type="text" name="Lastname" [(ngModel)]="employee.lastName">
+        </div>
+
+        <div class="form-group">
+          <label for="">Gender</label>
+          <input type="text" name="Gender" [(ngModel)]="employee.gender">
+        </div>
+
+        <div class="form-group">
+          <label for="">Address</label>
+          <input type="text" name="Address" [(ngModel)]="employee.address">
+        </div>
+
+        <div class="form-group">
+          <label for="">City</label>
+          <input type="text" name="City" [(ngModel)]="employee.city">
+        </div>
+
+        <div class="form-group">
+          <label for="">PhoneNumber</label>
+          <input type="text" name="PhoneNumber" [(ngModel)]="employee.phoneNumber">
+        </div>
+
+        <div class="form-group">
+          <label for="">Email</label>
+          <input type="text" name="Email" [(ngModel)]="employee.email">
+        </div>
+
+        <div class="form-group">
+            <label for="">Salary</label>
+            <input type="text" name="Salary" [(ngModel)]="employee.salary">
+          </div>
+        
+
+
+        <div class="form-group">
+            <label for="">DepartmentId</label>
+            <input type="text" name="DepartmentId" [(ngModel)]="employee.departmentId">
+        </div>
+ 
+
+       
+
+      
+        <div class="form-group">
+          <button>Save</button>
+        </div>
+
+        
+      </form>
+    </div> 
+
+  </div>
+ 
+   
+
+
+      <div class="employee-grid">
+
+        
+        <div (click)="populateForm(employee)" class="employee-row" *ngFor="let employee of employees">
+          <div class="employee-row-details">
+            <td>{{employee.firstName + " " + employee.lastName}}</td>
+     
+          </div>
+      
+   
+          <div class="employee-row-action">
+            <a (click)="onDelete(employee.employeeId)"><i class="fa-solid fa-trash-can"></i></a>
+          </div>
+     
+      
+        </div>
+     </div>   
+</div>  
+
+
+
+
+  
+    
+    
